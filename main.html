@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson_6</title>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="?page=1">Главная</a></li>
+        <li><a href="?page=3">Калькулятор SELECT</a></li>
+        <li><a href="?page=4">Калькулятор КНОПКИ</a></li>
+    </ul>
+</nav>
+{{content}}
+</body>
+</html>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    nav{
+        background-color: goldenrod;
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+
+    }
+
+    ul>li{
+
+        display: inline;
+        list-style-type: none;
+        color: #ffffff;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 24px;
+
+    }
+
+    a{
+        text-decoration: none;
+        color: #333;
+    }
+
+    .header{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+
+    }
+
+    .content{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    h2{
+        text-align: center;
+        margin: 10px;
+    }
+
+    .little-pict{
+        width: 300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .products{
+        border: 1px solid darkgray;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px;
+
+        margin-bottom: 20px;
+    }
+
+    .one-product{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .description{
+        width: 300px;
+        color: darkgray;
+        margin: 10px;
+    }
+
+    .price{
+        font-size: 24px;
+    }
+
+    .description-one{
+        color: #333333;
+        margin: 10px;
+    }
+
+    .fullscreen{
+        width: 700px;
+        margin: 10px;
+    }
+
+    .feedback{
+        margin-left: 100px;
+        width: 80%;
+        border-top: 1px solid #333333;
+        padding-top: 10px;
+    }
+
+    .header-feed{
+        background-color: #cccccc;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+
+    .header-form{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    form{
+        background-color: goldenrod;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+
+    input{
+        height: 20px;
+        padding: 5px;
+    }
+
+    .button{
+        height: 30px;
+    }
+
+    .header-feed-box{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        background-color: bisque;
+    }
+
+    .feed-username{
+        margin: 0;
+    }
+
+    .feed-date{
+        margin: 0;
+        font-size: 12px;
+        color: dimgray;
+    }
+
+    .feed-box{
+        width: 70%;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        margin-left: 30px;
+        border-bottom: 1px solid #333333;
+    }
+</style>
